@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DrinkMachineWallet.sol": "DrinkMachineWalletMiddleware"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DrinkMachineWallet.sol": {
+			"keccak256": "0xa93b0ecfe9ddf8bfdd3746eb5d7f333956220da70c6b4865a32475fdeaa215b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8684bc85c7e14af6cb46c0488da3a8bdf97432f66806695ae37ea41e638e849f",
+				"dweb:/ipfs/Qmd5AY62RkUu7BqBZBVZyfHBjdgLqTcfHJEjhwit14gjUM"
+			]
+		}
+	},
+	"version": 1
+}
