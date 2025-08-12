@@ -1,20 +1,19 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.2 <0.9.0;
 
-contract DrinkMachine {
-    struct ProductType {
-        string name;
-        uint price;
-        uint quantity;
-    }
+import "../DrinkMachineWallet/IDrinkMachineWallet.sol";
+import "./Structs.sol";
 
+contract DrinkMachine {
+    IDrinkMachineWallet public wallet;
     address public owner;
     mapping(address => uint) public transactions;
     ProductType[5] internal products;
     enum ProductEnum {Water, Tea, Juice, Milk, Coffee}
 
-    constructor() {
+    constructor(address _wallet) {
         owner = msg.sender;
+        wallet = IDrinkMachineWallet(_wallet);
         products[0] = ProductType("Water", 1 gwei, 100);
         products[1] = ProductType("Tea", 2 gwei, 100);
         products[2] = ProductType("Juice", 3 gwei, 100);

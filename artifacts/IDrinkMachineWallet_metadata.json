@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": "IDrinkMachineWallet"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": {
+			"keccak256": "0x1e0a91915ed769efb13f4ca39bc43662db09aecf66a8b86b2cf5acd32998f6fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d9d06cae19ec8f14074587152bef1e9dbf38fc6877c2b5a754b6b0134410c239",
+				"dweb:/ipfs/QmRP9Z9Jj1i3QCNGs6jgB6JuuUVaGHQzA9RmK8r8cbZV7C"
+			]
+		}
+	},
+	"version": 1
+}

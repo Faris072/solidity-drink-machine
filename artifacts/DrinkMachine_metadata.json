@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_wallet",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -74,7 +80,7 @@
 								"type": "uint256"
 							}
 						],
-						"internalType": "struct DrinkMachine.ProductType",
+						"internalType": "struct ProductType",
 						"name": "",
 						"type": "tuple"
 					}
@@ -116,6 +122,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "wallet",
+				"outputs": [
+					{
+						"internalType": "contract IDrinkMachineWallet",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "withdrawAllFunds",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -135,7 +154,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/DrinkMachine.sol": "DrinkMachine"
+			"contracts/DrinkMachine/DrinkMachine.sol": "DrinkMachine"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -149,12 +168,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/DrinkMachine.sol": {
-			"keccak256": "0xb53ff4ab0decf2f47213b579db38b74f350ed76dd03273693bdd649e909fb78f",
+		"contracts/DrinkMachine/DrinkMachine.sol": {
+			"keccak256": "0x3bd87a9bf825eaad2f113d952bcec8d3968762ddae76c98d35d519a42167096d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9f63b30891f075ff1f98cb75b8b79536f7c8e8c9aec800ca58578eb1d54f78c6",
-				"dweb:/ipfs/QmcqqSq3v97MbPxtvhT3hRUEdohPtXLjhq4rEoakcE3gFV"
+				"bzz-raw://82e21f4a73c60aa423e68a39e43a5f1ac098397d8085085594d0cf71695d67b1",
+				"dweb:/ipfs/QmZjb5zDB5qA8kXbKDBRVEPEr2jZUsPH2PpGADeWSSrTMe"
+			]
+		},
+		"contracts/DrinkMachine/Structs.sol": {
+			"keccak256": "0xd427730f1820b99eb149d0363a44dd6517f9af96aa7508e198158d7ca6407c60",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e34fd5bb4500e9f9b6e649cf3116674ebc9dec76d2e40b2c6fdfaf3c3358fb7e",
+				"dweb:/ipfs/QmZiT7ZFfCTgH9nSvVcb7cLdmfWZWg23wgNVzANAR2vG4n"
+			]
+		},
+		"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": {
+			"keccak256": "0x1e0a91915ed769efb13f4ca39bc43662db09aecf66a8b86b2cf5acd32998f6fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d9d06cae19ec8f14074587152bef1e9dbf38fc6877c2b5a754b6b0134410c239",
+				"dweb:/ipfs/QmRP9Z9Jj1i3QCNGs6jgB6JuuUVaGHQzA9RmK8r8cbZV7C"
 			]
 		}
 	},

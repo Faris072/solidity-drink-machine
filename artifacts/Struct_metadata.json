@@ -4,67 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "buy",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "deposit",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "transactions",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "action",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -78,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/DrinkMachineWallet/DrinkMachineWallet.sol": "DrinkMachineWallet"
+			"contracts/DrinkMachineWallet.sol": "Struct"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -132,20 +72,12 @@
 				"dweb:/ipfs/QmVUSvooZKEdEdap619tcJjTLcAuH6QBdZqAzWwnAXZAWJ"
 			]
 		},
-		"contracts/DrinkMachineWallet/DrinkMachineWallet.sol": {
-			"keccak256": "0x0182729253bd16c7790aa4cdef418743aff84e370b3c3bd6ccf17131944fad1b",
+		"contracts/DrinkMachineWallet.sol": {
+			"keccak256": "0x6719e1dd292094c1ef861f22e72c3da9b337662eff3c5d8e89f3579520ca2447",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://14140c6de308436b23e5ab98492e6626e8f5e57b1e5d3a9369ee7621d6d12ed6",
-				"dweb:/ipfs/QmS5kCFQCVxC4MdrdrysAezcnBDiCZbTYi9BTNpqwaYK3Q"
-			]
-		},
-		"contracts/DrinkMachineWallet/Structs.sol": {
-			"keccak256": "0xb1f7d002fb7617e44483801d2142a1fd029afabe334a563715fe4049ee214fea",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://2b7e000ef859dab32ad9c25054a0e74c48da41691f5f1aacd28c9e88e8d0eae0",
-				"dweb:/ipfs/QmNbvidAog8zwLtimmuKRxHESuob74ssvfeUZpeKa32x8k"
+				"bzz-raw://fb65ac3392c8e170e6dda89b891f260837f92f9f1a0153b30f41564bbcc0ae57",
+				"dweb:/ipfs/Qmcd7wnrkuBy622T6tSQeeGU6tgQkpfvFq6f5iHrZpESuy"
 			]
 		}
 	},
