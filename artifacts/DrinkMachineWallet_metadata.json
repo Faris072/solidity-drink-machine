@@ -11,6 +11,68 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "productEnum",
+						"type": "string"
+					}
+				],
+				"name": "BuyEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "DepositEvent",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "buy",
 				"outputs": [],
@@ -33,35 +95,6 @@
 					}
 				],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "transactions",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "action",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -133,19 +166,19 @@
 			]
 		},
 		"contracts/DrinkMachineWallet/DrinkMachineWallet.sol": {
-			"keccak256": "0x0182729253bd16c7790aa4cdef418743aff84e370b3c3bd6ccf17131944fad1b",
+			"keccak256": "0xaff17cdac1754c5d5faba06d47c75371ffaf52a708e2b97e77a3d9d7b1c7e0ec",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://14140c6de308436b23e5ab98492e6626e8f5e57b1e5d3a9369ee7621d6d12ed6",
-				"dweb:/ipfs/QmS5kCFQCVxC4MdrdrysAezcnBDiCZbTYi9BTNpqwaYK3Q"
+				"bzz-raw://3cd2db364ee28d2b2619e479b62782a55a99094fb2628568ba72d290ea918d2a",
+				"dweb:/ipfs/QmddaFn12trDF3sbHjGL2U2PBjfyND3UnN6J9Q44XQqgVs"
 			]
 		},
-		"contracts/DrinkMachineWallet/Structs.sol": {
-			"keccak256": "0xb1f7d002fb7617e44483801d2142a1fd029afabe334a563715fe4049ee214fea",
+		"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": {
+			"keccak256": "0x50ad84ffb621e3f40feefa4b985e7ab7b71b633bc7f723145938b86efd0abeea",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2b7e000ef859dab32ad9c25054a0e74c48da41691f5f1aacd28c9e88e8d0eae0",
-				"dweb:/ipfs/QmNbvidAog8zwLtimmuKRxHESuob74ssvfeUZpeKa32x8k"
+				"bzz-raw://f8a174a35b4686db854529217b3c4315532535e1cfc7c63eefb39959b33ec0fa",
+				"dweb:/ipfs/QmQkrhkDTcGkmDiMao1c91oSsBEfhCKWSWRAgHDLVTZYgm"
 			]
 		}
 	},

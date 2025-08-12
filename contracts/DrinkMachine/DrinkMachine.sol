@@ -7,18 +7,17 @@ import "./Structs.sol";
 contract DrinkMachine {
     IDrinkMachineWallet public wallet;
     address public owner;
-    mapping(address => uint) public transactions;
     ProductType[5] internal products;
     enum ProductEnum {Water, Tea, Juice, Milk, Coffee}
 
     constructor(address _wallet) {
         owner = msg.sender;
         wallet = IDrinkMachineWallet(_wallet);
-        products[0] = ProductType("Water", 1 gwei, 100);
-        products[1] = ProductType("Tea", 2 gwei, 100);
-        products[2] = ProductType("Juice", 3 gwei, 100);
-        products[3] = ProductType("Milk", 4 gwei, 100);
-        products[4] = ProductType("Coffee", 5 gwei, 100);
+        products[0] = ProductType("water", "Water", 1 wei, 100);
+        products[1] = ProductType("tea", "Tea", 2 wei, 100);
+        products[2] = ProductType("juice", "Juice", 3 wei, 100);
+        products[3] = ProductType("milk", "Milk", 4 wei, 100);
+        products[4] = ProductType("coffee", "Coffee", 5 wei, 100);
     }
 
     modifier onlyOwner(){
@@ -42,7 +41,6 @@ contract DrinkMachine {
         require(msg.value >= total, "Not enough ether");
 
         products[index].quantity -= qty;
-        transactions[msg.sender] += msg.value;
 
         // kirim saldo ke owner
         payable(owner).transfer(total);

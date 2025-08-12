@@ -41,11 +41,11 @@
 	},
 	"sources": {
 		"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": {
-			"keccak256": "0x1e0a91915ed769efb13f4ca39bc43662db09aecf66a8b86b2cf5acd32998f6fa",
+			"keccak256": "0x50ad84ffb621e3f40feefa4b985e7ab7b71b633bc7f723145938b86efd0abeea",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d9d06cae19ec8f14074587152bef1e9dbf38fc6877c2b5a754b6b0134410c239",
-				"dweb:/ipfs/QmRP9Z9Jj1i3QCNGs6jgB6JuuUVaGHQzA9RmK8r8cbZV7C"
+				"bzz-raw://f8a174a35b4686db854529217b3c4315532535e1cfc7c63eefb39959b33ec0fa",
+				"dweb:/ipfs/QmQkrhkDTcGkmDiMao1c91oSsBEfhCKWSWRAgHDLVTZYgm"
 			]
 		}
 	},

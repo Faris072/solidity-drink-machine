@@ -2,6 +2,7 @@
 pragma solidity >=0.8.2 <0.9.0;
 
 struct ProductType {
+    string slug;
     string name;
     uint price;
     uint quantity;
