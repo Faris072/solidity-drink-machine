@@ -21,22 +21,25 @@ contract DrinkMachineWallet {
         _;
     }
 
-    modifier BuyMiddleware(){
-         require (msg.value <= balance[msg.sender], "Saldo anda tidak mencukupi untuk membeli minuman ini.");
-         _;
+    modifier BuyMiddleware(address sender, uint value){
+        require (value <= balance[sender], "Saldo anda tidak mencukupi untuk membeli minuman ini.");
+        _;
     }
 
     function deposit() public payable DepositMiddleware returns(string memory, string memory) {
         balance[msg.sender] += msg.value;
 
+        emit DepositEvent(msg.sender, msg.value, "Deposit Success!", block.timestamp);
         return (
             "Your Deposit Success!", 
             string(abi.encodePacked("Your balance: ", balance[msg.sender].toString(), " Wei"))
         );
     }
 
-    function buy() external payable BuyMiddleware {
-        balance[msg.sender] -= msg.value;
+    function buy(address sender, uint value) external payable BuyMiddleware(sender, value) {
+        balance[sender] -= value;
+
+        emit BuyEvent(sender, value, "Buy Success!", "Water");
     }
 
     function getBalance() external view returns(uint) {

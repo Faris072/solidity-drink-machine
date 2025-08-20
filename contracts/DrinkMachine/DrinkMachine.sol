@@ -36,7 +36,7 @@ contract DrinkMachine {
     function buy(ProductEnum productEnum, uint qty) external payable {
         uint index = uint(productEnum);
         uint total = products[uint(productEnum)].price * qty;
-        require(index >= 0 || index < products.length, "Produk enum invalid"); // jika kondisi terpenuhi maka akan di lanjutkan
+        require(index >= 0 && index < products.length, "Produk enum invalid"); // jika kondisi terpenuhi maka akan di lanjutkan
         require(products[index].quantity >= qty, "Produk tidak cukup."); // jika kondisi tidak terpenuhi maka akan ter trigger error
         require(wallet.getBalance(msg.sender) >= total, "Ether tidak mencukupi");
 
@@ -46,7 +46,7 @@ contract DrinkMachine {
         // payable(owner).transfer(total);
 
         // kirim ke wallet owner
-        wallet.buy();
+        wallet.buy(msg.sender, total);
     }
 
     function withdrawAllFunds() public payable onlyOwner {
