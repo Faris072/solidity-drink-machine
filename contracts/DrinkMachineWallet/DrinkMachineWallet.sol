@@ -13,7 +13,7 @@ contract DrinkMachineWallet {
     event BuyEvent(address indexed user, uint value, string message, string productEnum);
     
     constructor() {
-        balance[msg.sender] = 1 wei;
+        balance[msg.sender] = 0 wei;
     }
 
     modifier DepositMiddleware(){
@@ -22,7 +22,7 @@ contract DrinkMachineWallet {
     }
 
     modifier BuyMiddleware(){
-         require (msg.value < balance[msg.sender], "Saldo anda tidak mencukupi untuk membeli minuman ini.");
+         require (msg.value <= balance[msg.sender], "Saldo anda tidak mencukupi untuk membeli minuman ini.");
          _;
     }
 
@@ -37,5 +37,9 @@ contract DrinkMachineWallet {
 
     function buy() external payable BuyMiddleware {
         balance[msg.sender] -= msg.value;
+    }
+
+    function getBalance() external view returns(uint) {
+        return balance[msg.sender];
     }
 }

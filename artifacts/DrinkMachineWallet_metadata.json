@@ -96,6 +96,19 @@
 				],
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -166,19 +179,19 @@
 			]
 		},
 		"contracts/DrinkMachineWallet/DrinkMachineWallet.sol": {
-			"keccak256": "0xaff17cdac1754c5d5faba06d47c75371ffaf52a708e2b97e77a3d9d7b1c7e0ec",
+			"keccak256": "0xdb6bf0b799eb96993e616796b3f2576d0e788e2f565fb50f752e0e778b130483",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3cd2db364ee28d2b2619e479b62782a55a99094fb2628568ba72d290ea918d2a",
-				"dweb:/ipfs/QmddaFn12trDF3sbHjGL2U2PBjfyND3UnN6J9Q44XQqgVs"
+				"bzz-raw://27a4f2a060655ed2aec15dfb3b0c55e8aa33d6cf1cc302029eef05329eb6a25e",
+				"dweb:/ipfs/QmcXK3SxSrdTdGPnCq5EReFd4jCgRZqJ4yvMyDkHxjhY3i"
 			]
 		},
 		"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": {
-			"keccak256": "0x50ad84ffb621e3f40feefa4b985e7ab7b71b633bc7f723145938b86efd0abeea",
+			"keccak256": "0x1de35d0f16c3969000e36e952f7e45cff51442403e3ac9986afdf50b129da10a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f8a174a35b4686db854529217b3c4315532535e1cfc7c63eefb39959b33ec0fa",
-				"dweb:/ipfs/QmQkrhkDTcGkmDiMao1c91oSsBEfhCKWSWRAgHDLVTZYgm"
+				"bzz-raw://dd1fbc07c86e5ef57d8266699c75cfb076a09ac6c12cf6649fcdb9c1e98ac6b6",
+				"dweb:/ipfs/QmQYNmd79ULVe6bfUj6gXmnWYdoR2ijPeaQ7G4JKNepYwU"
 			]
 		}
 	},

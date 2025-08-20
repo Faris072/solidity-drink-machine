@@ -7,9 +7,28 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "deposit",
+				"name": "buy",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -41,11 +60,11 @@
 	},
 	"sources": {
 		"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": {
-			"keccak256": "0x50ad84ffb621e3f40feefa4b985e7ab7b71b633bc7f723145938b86efd0abeea",
+			"keccak256": "0x1de35d0f16c3969000e36e952f7e45cff51442403e3ac9986afdf50b129da10a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f8a174a35b4686db854529217b3c4315532535e1cfc7c63eefb39959b33ec0fa",
-				"dweb:/ipfs/QmQkrhkDTcGkmDiMao1c91oSsBEfhCKWSWRAgHDLVTZYgm"
+				"bzz-raw://dd1fbc07c86e5ef57d8266699c75cfb076a09ac6c12cf6649fcdb9c1e98ac6b6",
+				"dweb:/ipfs/QmQYNmd79ULVe6bfUj6gXmnWYdoR2ijPeaQ7G4JKNepYwU"
 			]
 		}
 	},

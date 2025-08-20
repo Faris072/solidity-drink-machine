@@ -1,5 +1,5 @@
 {
-	"id": "fdd194702dc7649c398a67370fab31c7",
+	"id": "2958f2bf2e5bdfcf3f14180fe17e34dc",
 	"_format": "hh-sol-build-info-1",
 	"solcVersion": "0.8.30",
 	"solcLongVersion": "0.8.30+commit.73712a01",
@@ -7,7 +7,7 @@
 		"language": "Solidity",
 		"sources": {
 			"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": {
-				"content": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.2 <0.9.0;\n\nstruct Transaction {\n    string action;\n    uint value;\n}\n\ninterface IDrinkMachineWallet {\n    function deposit() external payable;\n}"
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.2 <0.9.0;\n\nstruct Transaction {\n    string action;\n    uint value;\n}\n\ninterface IDrinkMachineWallet {\n    function buy() external payable;\n    function getBalance(address _address) external returns (uint);\n}"
 			}
 		},
 		"settings": {
@@ -45,9 +45,28 @@
 					"abi": [
 						{
 							"inputs": [],
-							"name": "deposit",
+							"name": "buy",
 							"outputs": [],
 							"stateMutability": "payable",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "_address",
+									"type": "address"
+								}
+							],
+							"name": "getBalance",
+							"outputs": [
+								{
+									"internalType": "uint256",
+									"name": "",
+									"type": "uint256"
+								}
+							],
+							"stateMutability": "nonpayable",
 							"type": "function"
 						}
 					],
@@ -78,10 +97,11 @@
 						"gasEstimates": null,
 						"legacyAssembly": null,
 						"methodIdentifiers": {
-							"deposit()": "d0e30db0"
+							"buy()": "a6f2ae3a",
+							"getBalance(address)": "f8b2cb4f"
 						}
 					},
-					"metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol\":\"IDrinkMachineWallet\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol\":{\"keccak256\":\"0x50ad84ffb621e3f40feefa4b985e7ab7b71b633bc7f723145938b86efd0abeea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f8a174a35b4686db854529217b3c4315532535e1cfc7c63eefb39959b33ec0fa\",\"dweb:/ipfs/QmQkrhkDTcGkmDiMao1c91oSsBEfhCKWSWRAgHDLVTZYgm\"]}},\"version\":1}",
+					"metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"buy\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol\":\"IDrinkMachineWallet\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol\":{\"keccak256\":\"0x1de35d0f16c3969000e36e952f7e45cff51442403e3ac9986afdf50b129da10a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dd1fbc07c86e5ef57d8266699c75cfb076a09ac6c12cf6649fcdb9c1e98ac6b6\",\"dweb:/ipfs/QmQYNmd79ULVe6bfUj6gXmnWYdoR2ijPeaQ7G4JKNepYwU\"]}},\"version\":1}",
 					"storageLayout": {
 						"storage": [],
 						"types": null
@@ -100,13 +120,13 @@
 					"absolutePath": "contracts/DrinkMachineWallet/IDrinkMachineWallet.sol",
 					"exportedSymbols": {
 						"IDrinkMachineWallet": [
-							10
+							17
 						],
 						"Transaction": [
 							6
 						]
 					},
-					"id": 11,
+					"id": 18,
 					"license": "MIT",
 					"nodeType": "SourceUnit",
 					"nodes": [
@@ -186,7 +206,7 @@
 							"name": "Transaction",
 							"nameLocation": "72:11:0",
 							"nodeType": "StructDefinition",
-							"scope": 11,
+							"scope": 18,
 							"src": "65:57:0",
 							"visibility": "public"
 						},
@@ -197,49 +217,133 @@
 							"contractDependencies": [],
 							"contractKind": "interface",
 							"fullyImplemented": false,
-							"id": 10,
+							"id": 17,
 							"linearizedBaseContracts": [
-								10
+								17
 							],
 							"name": "IDrinkMachineWallet",
 							"nameLocation": "134:19:0",
 							"nodeType": "ContractDefinition",
 							"nodes": [
 								{
-									"functionSelector": "d0e30db0",
+									"functionSelector": "a6f2ae3a",
 									"id": 9,
 									"implemented": false,
 									"kind": "function",
 									"modifiers": [],
-									"name": "deposit",
-									"nameLocation": "169:7:0",
+									"name": "buy",
+									"nameLocation": "169:3:0",
 									"nodeType": "FunctionDefinition",
 									"parameters": {
 										"id": 7,
 										"nodeType": "ParameterList",
 										"parameters": [],
-										"src": "176:2:0"
+										"src": "172:2:0"
 									},
 									"returnParameters": {
 										"id": 8,
 										"nodeType": "ParameterList",
 										"parameters": [],
-										"src": "195:0:0"
+										"src": "191:0:0"
 									},
-									"scope": 10,
-									"src": "160:36:0",
+									"scope": 17,
+									"src": "160:32:0",
 									"stateMutability": "payable",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "f8b2cb4f",
+									"id": 16,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getBalance",
+									"nameLocation": "206:10:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 12,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 11,
+												"mutability": "mutable",
+												"name": "_address",
+												"nameLocation": "225:8:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 16,
+												"src": "217:16:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 10,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "217:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "216:18:0"
+									},
+									"returnParameters": {
+										"id": 15,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 14,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 16,
+												"src": "253:4:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 13,
+													"name": "uint",
+													"nodeType": "ElementaryTypeName",
+													"src": "253:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "252:6:0"
+									},
+									"scope": 17,
+									"src": "197:62:0",
+									"stateMutability": "nonpayable",
 									"virtual": false,
 									"visibility": "external"
 								}
 							],
-							"scope": 11,
-							"src": "124:74:0",
+							"scope": 18,
+							"src": "124:137:0",
 							"usedErrors": [],
 							"usedEvents": []
 						}
 					],
-					"src": "32:166:0"
+					"src": "32:229:0"
 				},
 				"id": 0
 			}

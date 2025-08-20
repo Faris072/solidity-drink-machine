@@ -7,6 +7,6 @@ struct Transaction {
 }
 
 interface IDrinkMachineWallet {
-    function deposit() public payable;
     function buy() external payable;
+    function getBalance(address _address) external returns (uint);
 }
