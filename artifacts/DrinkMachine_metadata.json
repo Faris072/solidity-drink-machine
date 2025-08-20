@@ -155,11 +155,11 @@
 	},
 	"sources": {
 		"contracts/DrinkMachine/DrinkMachine.sol": {
-			"keccak256": "0x48d4cc3acb2a581b1fe60c42838b1a95e0759d281b1a713759f099d0a33db044",
+			"keccak256": "0xe8e075ff3c336dea18d5c89631a42393a51a09696214e7f6b5227d150de5b456",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://288ae2100cbd5bd7f37df8dbe0ff10bb702fb83b2421d28fe46311c0aa044d9a",
-				"dweb:/ipfs/QmZmT8m1scSZwavy6n2M9TC4BKwer5nnBtwC8f5DLx6T1t"
+				"bzz-raw://e174fd820bcc74ef29cb54061ba5b638b427c165e97193ce0446f94e62fb09b0",
+				"dweb:/ipfs/Qmf2SDRJfGWLYikfSYnPhjHjmqdJiuTZNAzwh5v8tGvwT5"
 			]
 		},
 		"contracts/DrinkMachine/Structs.sol": {
@@ -171,11 +171,11 @@
 			]
 		},
 		"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": {
-			"keccak256": "0x1de35d0f16c3969000e36e952f7e45cff51442403e3ac9986afdf50b129da10a",
+			"keccak256": "0xdb5e08e98a85e9bec8e016dcfa38731007385c10c368b38cfc99a6ccd6fc2157",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dd1fbc07c86e5ef57d8266699c75cfb076a09ac6c12cf6649fcdb9c1e98ac6b6",
-				"dweb:/ipfs/QmQYNmd79ULVe6bfUj6gXmnWYdoR2ijPeaQ7G4JKNepYwU"
+				"bzz-raw://5152b0a5525fe1bcea4be8e14a7627d53b6231d2011253445e746bab1c6b6059",
+				"dweb:/ipfs/Qmcur9PbFCKAqmVzg8WbvJiKSh4wJu35b23daKuWBdYA4x"
 			]
 		}
 	},

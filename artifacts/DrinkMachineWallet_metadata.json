@@ -73,7 +73,18 @@
 				"type": "event"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
 				"name": "buy",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -179,19 +190,19 @@
 			]
 		},
 		"contracts/DrinkMachineWallet/DrinkMachineWallet.sol": {
-			"keccak256": "0xdb6bf0b799eb96993e616796b3f2576d0e788e2f565fb50f752e0e778b130483",
+			"keccak256": "0x9d7776ecab0f74a7a30b0e5b9fb7177f15425e310a5307ace332a21829f9a83b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://27a4f2a060655ed2aec15dfb3b0c55e8aa33d6cf1cc302029eef05329eb6a25e",
-				"dweb:/ipfs/QmcXK3SxSrdTdGPnCq5EReFd4jCgRZqJ4yvMyDkHxjhY3i"
+				"bzz-raw://c6ad87d18952c4c62227da19e8406547fc1071538df9c228a56bf0d2e474e84b",
+				"dweb:/ipfs/QmV8Gh1oBoToeCXoT3ki2zGRmcNSG1bA2Hvk9Xe3zdSrMR"
 			]
 		},
 		"contracts/DrinkMachineWallet/IDrinkMachineWallet.sol": {
-			"keccak256": "0x1de35d0f16c3969000e36e952f7e45cff51442403e3ac9986afdf50b129da10a",
+			"keccak256": "0xdb5e08e98a85e9bec8e016dcfa38731007385c10c368b38cfc99a6ccd6fc2157",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dd1fbc07c86e5ef57d8266699c75cfb076a09ac6c12cf6649fcdb9c1e98ac6b6",
-				"dweb:/ipfs/QmQYNmd79ULVe6bfUj6gXmnWYdoR2ijPeaQ7G4JKNepYwU"
+				"bzz-raw://5152b0a5525fe1bcea4be8e14a7627d53b6231d2011253445e746bab1c6b6059",
+				"dweb:/ipfs/Qmcur9PbFCKAqmVzg8WbvJiKSh4wJu35b23daKuWBdYA4x"
 			]
 		}
 	},
